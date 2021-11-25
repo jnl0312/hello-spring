@@ -9,6 +9,9 @@ import java.util.*;
 
 public class MemoryMemberRepository implements MemberRepository {
 
+    // store 변수는 타입이 Map<Long, Member>
+    // Map<Long, Member>는 Map의 Key로는 Long 타입의 객체를,
+    // Value로는 Member 타입의 객체를 받아들이겠다
     private static Map<Long, Member> store = new HashMap<>();
     private static long sequence = 0L;
 
